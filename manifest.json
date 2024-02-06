@@ -1,24 +1,14 @@
 {
-    "manifest_version": 3,
-    "name": "Spotify Playlist Player",
-    "version": "1",
-    "description": "Play your favorite Spotify playlist with one click.",
-    "permissions": ["activeTab", "scripting", "storage"],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
-      }
-    },
-    "icons": {
-      "16": "icon.png",
-      "48": "icon.png",
-      "128": "icon.png"
-    },
-    "background": {
-      "service_worker": "background.js"
-    }
-  }
-  
+  "name": "Spot Play",
+  "description": "One-Click Spotify Playlist Player in your Browser.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "tab_override.html"
+  },
+  "permissions": ["tabs"]
+}
